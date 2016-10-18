@@ -43,7 +43,7 @@ public class adapter_comentarios extends ArrayAdapter<comentarios>{
                 holder.avatar = (ImageView) convertView.findViewById(R.id.iv_avatar);
                 holder.name = (TextView) convertView.findViewById(R.id.txtname);
                 holder.comentario = (TextView) convertView.findViewById(R.id.txtcomentarios);
-                holder.fecha = (TextView) convertView.findViewById(R.id.txtdate);
+                holder.fecha = (TextView) convertView.findViewById(R.id.txtdate);//esto que onda
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
