@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.alex.raihere.generar_viaje">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/txtreunion"
+        android:text="Punto de reunion:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:focusable="true"
+        />
+
+    <EditText
+        android:id="@+id/edtReunion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtreunion"
+        android:layout_marginTop="3dp"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:maxLength="100"
+        />
+
+    <TextView
+        android:id="@+id/txtdestino"
+        android:text="Destino:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtreunion"
+        android:layout_alignRight="@+id/txtreunion"
+        />
+
+    <EditText
+        android:id="@+id/edtDestino"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtreunion"
+        android:layout_below="@+id/edtReunion"
+        android:layout_marginRight="20dp"
+        android:singleLine="true"
+        android:maxLength="100"
+        />
+    <TextView
+        android:id="@+id/txthora"
+        android:text="Hora:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtdestino"
+        />
+
+    <EditText
+        android:id="@+id/edthora"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txthora"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/edtDestino"
+        android:singleLine="true"
+        android:hint="18:30"
+        />
+
+    <TextView
+        android:id="@+id/fecha"
+        android:text="Fecha:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtdestino"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/txfecha2"
+        android:text="27/08/2016:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtdestino"
+        android:layout_toRightOf="@+id/fecha"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/txtdescripcion"
+        android:text="Descripcción:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingLeft="20dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txthora"
+        android:inputType="time"
+        />
+
+
+
+    <EditText
+        android:id="@+id/edtDescripccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/txtdescripcion"
+        android:singleLine="false"
+        android:layout_marginRight="20dp"
+        android:maxLength="500"
+        />
+
+    <TextView
+        android:id="@+id/txtcosto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/edtDescripccion"
+        android:text="Costo:"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="19dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtcosto"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/edtDescripccion"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/txtcosto"
+        android:phoneNumber="true"
+        android:maxLength="4"
+
+        />
+    <TextView
+        android:id="@+id/txtPersonas"
+        android:text="Capacidad:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="18dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/edtDescripccion"
+        android:layout_toLeftOf="@+id/edtPersonas"
+        />
+    <EditText
+        android:id="@+id/edtPersonas"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/edtDescripccion"
+        android:layout_alignRight="@+id/edtDescripccion"
+        android:phoneNumber="true"
+        android:gravity="center"
+        android:maxLength="2"
+        />
+
+    <TextView
+        android:id="@+id/txtEscalas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@+id/txtcosto"
+        android:text="Escalas:"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="18dp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtEscalas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@+id/edtcosto"
+        android:textSize="15dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="10dp"
+        android:layout_toRightOf="@+id/txtEscalas"
+        android:layout_marginRight="20dp"
+        android:maxLength="300"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtEscalas">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtEscalas"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txtrestricciones"
+            android:text="Restricciones."
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="40dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:textSize="20dp"
+            android:background="@drawable/redondoedit"
+            android:textColor="#FFFFFF"
+            android:layout_below="@+id/txthora"
+            />
+        <CheckBox
+            android:id="@+id/chkfumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fumar"
+            android:button="@drawable/boton_checkbox"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:id="@+id/chkalcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alcohol"
+            android:button="@drawable/boton_checkbox"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:id="@+id/chkmascotas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mascotas"
+            android:button="@drawable/boton_checkbox"
+            android:layout_marginLeft="20dp"
+            />
+        <CheckBox
+            android:id="@+id/chkmaletas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maletas"
+            android:button="@drawable/boton_checkbox"
+            android:layout_marginLeft="20dp"
+            />
+
+        <com.rey.material.widget.Button
+            android:id="@+id/btndar_alta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Dar de alta"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/custom_button"
+            android:layout_marginBottom="30dp"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

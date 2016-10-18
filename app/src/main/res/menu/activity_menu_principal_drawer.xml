@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Hoy">
+            <menu>
+                <item
+                    android:id="@+id/hoy"
+                    android:icon="@drawable/proximos"
+                    android:title="Viajes próximos"
+                    />
+
+            </menu>
+        </item>
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/perfil2"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/buscar"
+            android:icon="@drawable/buscar"
+            android:title="Buscar viajes" />
+        <item
+            android:id="@+id/ofrecer_viajes"
+            android:icon="@drawable/ofrecer"
+            android:title="Ofrecer viaje" />
+        <item
+            android:id="@+id/viajes"
+            android:icon="@drawable/mis_viajes"
+            android:title="Mis viajes" />
+        <item
+            android:id="@+id/datos"
+            android:icon="@drawable/datos"
+            android:title="Mis datos" />
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/logout"
+            android:title="Cerrar Sesión" />
+    </group>
+
+</menu>

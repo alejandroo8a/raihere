@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.alex.raihere.viajes_actuales"
+    android:paddingTop="50dp">
+
+   <GridView
+       android:id="@+id/gridviewactuales"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:numColumns="1"/>
+   <TextView
+       android:id="@+id/txtnohayactuales"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="No hay viajes"
+       android:textSize="30dp"
+       android:layout_gravity="center"
+       android:visibility="invisible"
+       />
+
+   <com.rey.material.widget.ProgressView
+       android:id="@+id/progres"
+       android:layout_width="48dp"
+       android:layout_height="48dp"
+       app:pv_autostart="true"
+       app:pv_circular="true"
+       app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+       android:layout_gravity="center"
+       app:pv_progressMode="indeterminate"/>
+</FrameLayout>

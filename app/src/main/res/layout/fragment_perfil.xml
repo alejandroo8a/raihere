@@ -1,0 +1,158 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.raihere.perfil">
+
+    <ImageView
+        android:id="@+id/perfilperfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        />
+    <TextView
+        android:id="@+id/txtnombreperfil"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Alejandro Ochoa"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/perfilperfil"
+        />
+    <TextView
+        android:id="@+id/txtnumero"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="3121520051"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtnombreperfil"
+        android:gravity="left"
+        android:paddingTop="5dp"
+        android:layout_toRightOf="@+id/perfilperfil"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtnumero"
+        android:layout_toRightOf="@+id/perfilperfil"
+        android:id="@+id/stars"
+
+        >
+
+        <ImageView
+            android:id="@+id/imgstar1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:visibility="invisible"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:id="@+id/imgstar2"
+            android:layout_width="32dp"
+            android:visibility="invisible"
+            android:layout_height="32dp"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:id="@+id/imgstar3"
+            android:layout_width="32dp"
+            android:visibility="invisible"
+            android:layout_height="32dp"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:id="@+id/imgstar4"
+            android:layout_width="32dp"
+            android:visibility="invisible"
+            android:layout_height="32dp"
+            android:src="@drawable/star"/>
+        <ImageView
+            android:id="@+id/imgstar5"
+            android:layout_width="32dp"
+            android:visibility="invisible"
+            android:layout_height="32dp"
+            android:src="@drawable/star"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtvehiculoperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stars"
+        android:layout_toRightOf="@+id/perfilperfil"
+        android:text="VEHICULO."
+        android:textSize="15dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/redondoedit"
+        />
+    <TextView
+        android:id="@+id/txtmarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvehiculoperfil"
+        android:layout_toRightOf="@+id/perfilperfil"
+        android:text="Honda"
+        />
+    <TextView
+        android:id="@+id/txtmodelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvehiculoperfil"
+        android:layout_toRightOf="@+id/txtmarca"
+        android:layout_marginLeft="20dp"
+        android:text="Accord"
+        />
+
+    <TextView
+        android:id="@+id/txtaño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtvehiculoperfil"
+        android:layout_toRightOf="@+id/txtmodelo"
+        android:layout_marginLeft="20dp"
+        android:text="2010"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtmarca"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comentarios"
+            android:textSize="20dp"
+            android:background="#2196F3"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabs2"
+            app:tabSelectedTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:background="#2196F3"
+            android:layout_height="wrap_content"
+            />
+         </android.support.design.widget.AppBarLayout>
+         <android.support.v4.view.ViewPager
+         android:id="@+id/viewpager2"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

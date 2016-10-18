@@ -1,0 +1,23 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.raihere.comentarios_chofer">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/lista_chofer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+    <TextView
+        android:id="@+id/txtnohaychofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sin comentarios"
+        android:textSize="30dp"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        />
+
+</FrameLayout>

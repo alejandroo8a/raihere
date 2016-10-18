@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_portadora"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alex.raihere.portadora">
+
+
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.alex.raihere.perfil"
+        tools:layout= "@layout/fragment_perfil"
+        android:id="@+id/fragment">
+    </fragment>
+
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/publicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fab_iconSrc="@drawable/comentar"
+        app:layout_anchor="@+id/fragment"
+        app:layout_anchorGravity="bottom|right"
+        app:fab_radius="20dp"
+        app:fab_iconSize="40dp"
+        />
+
+
+</android.support.design.widget.CoordinatorLayout>

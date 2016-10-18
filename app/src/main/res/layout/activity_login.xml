@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#2196F3"
+    tools:context="com.example.alex.raihere.Login">
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edtUser"
+        android:layout_width="250dp"
+        app:hintAnimationEnabled="true"
+        android:layout_centerHorizontal="true"
+        app:hintTextAppearance="@style/Hint"
+        android:textColorHint="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/topLogin" >
+
+
+    <EditText
+        android:id="@+id/edtUser2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtUser"
+        android:hint="Usuario"
+        android:text="aochoa0@ucol.mx"
+        android:textColor="#BBDEFB"
+        android:inputType="textEmailAddress"
+        android:textSize="20dp"
+        android:singleLine="true"
+        android:layout_centerHorizontal="true" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/edtPass"
+        android:layout_width="250dp"
+        app:hintAnimationEnabled="true"
+        app:hintTextAppearance="@style/Hint"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#FFFFFF"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUser">
+    <EditText
+        android:password="true"
+        android:singleLine="true"
+        android:id="@+id/edtPass2"
+        android:hint="Contraseña"
+        android:textSize="20dp"
+        android:text="123"
+        android:textColor="#BBDEFB"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        />
+    </android.support.design.widget.TextInputLayout>
+    <TextView
+        android:id="@+id/txtOlvido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forget"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/edtPass"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp" />
+    <TextView
+        android:id="@+id/txtRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Register"
+        android:textSize="17dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/txtOlvido"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="40dp" />
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:textColor="#FFF"
+        android:background="@drawable/custom_button"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtRegistro"
+        android:layout_marginTop="30dp"
+        />
+</RelativeLayout>

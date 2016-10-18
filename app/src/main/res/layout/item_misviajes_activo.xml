@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="100dp"
+        android:src="@drawable/suitcase"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/txtdestinoviajesactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viaje de la piedra lisa"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp"
+            android:lines="1"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/txtnombreviajesactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alejandro"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/txtfechaviajesactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2016-09-05"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:id="@+id/txtcostoviajesactivo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Personas"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:textSize="17dp"
+            android:textColor="@android:color/black"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
