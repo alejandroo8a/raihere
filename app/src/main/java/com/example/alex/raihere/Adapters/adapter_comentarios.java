@@ -46,7 +46,7 @@ public class adapter_comentarios extends ArrayAdapter<comentarios>{
                 holder.fecha = (TextView) convertView.findViewById(R.id.txtdate);//esto que onda
                 convertView.setTag(holder);
             } else {
-                holder = (ViewHolder) convertView.getTag();
+                holder = (ViewHolder) convertView.getTag();//otro comentario
             }
 
 
