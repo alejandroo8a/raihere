@@ -29,7 +29,7 @@ import java.util.List;
  * to handle interaction events.
  */
 public class comentarios_pasajero extends Fragment {
-    private static String TAG = "comentarios_pasajero";
+    private static final String TAG = "comentarios_pasajero";
     ListView lista;
     ArrayAdapter<comentarios> arrayAdapter;
     SharedPreferences sharedPreferences;

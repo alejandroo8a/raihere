@@ -23,7 +23,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtUser"
         android:hint="Usuario"
-        android:text="aochoa0@ucol.mx"
         android:textColor="#BBDEFB"
         android:inputType="textEmailAddress"
         android:textSize="20dp"
@@ -44,9 +43,8 @@
         android:password="true"
         android:singleLine="true"
         android:id="@+id/edtPass2"
-        android:hint="Contraseña"
         android:textSize="20dp"
-        android:text="123"
+        android:hint="Contraseña"
         android:textColor="#BBDEFB"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
@@ -83,5 +81,6 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@id/txtRegistro"
         android:layout_marginTop="30dp"
+        android:focusable="true"
         />
 </RelativeLayout>

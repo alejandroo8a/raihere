@@ -6,27 +6,50 @@
     android:layout_height="match_parent">
 
 
-        <EditText
-            android:id="@+id/edtcomentario"
-            android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/edtcomentario"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20dp"
+        android:background="#00BCD4"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFFFF"
+        android:hint="Comentario"
+        android:layout_marginLeft="17dp"
+
+        android:layout_marginRight="17dp"
+        android:textColorHint="#FFFFFF"
+        android:singleLine="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="Comentario"
-            android:textSize="15dp"
-            android:singleLine="true"
-            />
+            android:text="Comentar"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFFFFF"
+            android:id="@+id/btnEnviar2"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center_horizontal"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Comentar"
-        android:id="@+id/btnEnviar2"
-        android:layout_gravity="center_horizontal"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Cancelar"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btnCancelar2"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/Cancelar"
-        android:id="@+id/btnCancelar2"
-        android:layout_gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

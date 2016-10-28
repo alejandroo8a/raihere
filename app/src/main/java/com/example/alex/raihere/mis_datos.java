@@ -18,6 +18,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.alex.raihere.Web_Service.Peticiones;
 import com.rey.material.widget.ProgressView;
@@ -119,6 +120,7 @@ public class mis_datos extends Fragment {
         imagen=sharedPreferences.getString("IMAGEN","0");
         cargarImagen(imagen);
         edtNombre.setText(sharedPreferences.getString("NOMBRE","0"));
+        edttel.setText(sharedPreferences.getString("TELEFONO","0"));
         btncambiarPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

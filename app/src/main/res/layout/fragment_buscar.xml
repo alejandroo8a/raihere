@@ -63,6 +63,7 @@
         app:fabSize="normal"
         app:fab_backgroundColor="#00BCD4"
         app:fab_iconSrc="@drawable/buscar"
+        app:rd_enable="true"
         />
 
 

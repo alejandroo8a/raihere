@@ -614,13 +614,15 @@ public class Peticiones {
                     @Override
                     public void onResponse(String response) {
                         respuesta = response;
-                        Log.d(TAG, "mis viajes " + response);
+                        Log.d(TAG, "COMENTARIOS DEL CHOFER " + response);
+                        Toast.makeText(context, "Comentario agregado con éxito.", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
                         Log.d(TAG, "fallo " + volleyError.toString());
+                        Toast.makeText(context, "Error al agrgar comentario.", Toast.LENGTH_SHORT).show();
                     }
                 }) {
             @Override
@@ -650,13 +652,15 @@ public class Peticiones {
                     @Override
                     public void onResponse(String response) {
                         respuesta = response;
-                        Log.d(TAG, "mis viajes " + response);
+                        Log.d(TAG, "COMENTARIOS DEL PASAJERO " + response);
+                        Toast.makeText(context, "Comentario agregado con éxito.", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError volleyError) {
                         Log.d(TAG, "fallo " + volleyError.toString());
+                        Toast.makeText(context, "Error al agrgar comentario.", Toast.LENGTH_SHORT).show();
                     }
                 }) {
             @Override

@@ -88,7 +88,7 @@ public class viajes_activos_detalle extends AppCompatActivity {
                         viaje=peticiones.saberDetalleViajes(peticiones.respuesta);
                         SharedPreferences.Editor edit = shared.edit();
                         edit.putString("TIPOPERFIL","1");
-                        edit.putString("TIPOCOMENTARIO","0");//1 ES COMENTARIO HACIA CHOFER
+                        edit.putString("TIPOCOMENTARIO","0");//1 ES COMENTARIO HACIA PASAJERO
                         edit.putString("IDUSUARIOP",iduser);
                         edit.putString("NOMBREP",viaje.getNombre());
                         edit.putString("TELEFONOP",viaje.getTelefono());

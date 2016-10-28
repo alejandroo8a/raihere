@@ -33,9 +33,9 @@ public class adapter_comentarios extends ArrayAdapter<comentarios>{
         ViewHolder holder;
         // Lead actual.
         comentarios comentario = getItem(position);
-        Log.d(TAG, "getView: "+comentario.getComentario().toString());
+        Log.d(TAG, "el comentario es: "+comentario.getComentario().toString());
         // ¿Ya se infló este view?
-        if(!comentario.getComentario().toString().equals("null")||comentario.getComentario().toString()!="null") {
+        if(!comentario.getComentario().toString().equals("null")) {
             if (null == convertView) {
                 //Si no existe, entonces inflarlo con image_list_view.xml
                 convertView = inflater.inflate(R.layout.item_comentarios, parent, false);
@@ -43,13 +43,11 @@ public class adapter_comentarios extends ArrayAdapter<comentarios>{
                 holder.avatar = (ImageView) convertView.findViewById(R.id.iv_avatar);
                 holder.name = (TextView) convertView.findViewById(R.id.txtname);
                 holder.comentario = (TextView) convertView.findViewById(R.id.txtcomentarios);
-                holder.fecha = (TextView) convertView.findViewById(R.id.txtdate);//esto que onda
+                holder.fecha = (TextView) convertView.findViewById(R.id.txtdate);
                 convertView.setTag(holder);
             } else {
-                holder = (ViewHolder) convertView.getTag();//otro comentario
+                holder = (ViewHolder) convertView.getTag();
             }
-
-
             // Setup.
             if (!comentario.getImagen().equals(""))
                 Picasso.with(getContext())
@@ -62,6 +60,9 @@ public class adapter_comentarios extends ArrayAdapter<comentarios>{
             holder.fecha.setText(comentario.getFecha());
 
             return convertView;
+        }
+        else{
+            Log.d(TAG, "NO ENTRE");
         }
         return null;
 

@@ -131,7 +131,7 @@ public class generar_viaje extends Fragment {
         alcohol=chkAlcohol.isChecked() ? "1": "0";
         maleta=chkMaletas.isChecked() ? "1": "0";
         Log.d(TAG, "fecha "+fecha.getText().toString());
-        if(edtReunion.toString()!="" && edtDestino.toString()!="null" && edtCosto.toString()!=""&&fecha.getText().toString()!=""&& edtCapacidad.toString()!="") {
+        if(!edtReunion.getText().toString().equals("") && !edtDestino.getText().toString().equals("") && !edtCosto.getText().toString().equals("")&&!fecha.getText().toString().equals("")&& !edtCapacidad.getText().toString().equals("")) {
             peticiones.altaViaje(getContext(), id, edtDescripccion.getText().toString(), edtReunion.getText().toString(), edtDestino.getText().toString(), fecha.getText().toString(), edtCosto.getText().toString(), edtCapacidad.getText().toString(), edtEscalas.getText().toString(), edtHora.getText().toString(), fumar, alcohol, mascota, maleta);
             cleanScreen();
         }

@@ -43,7 +43,7 @@ public class comentarios_chofer extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment probando git
         View view =inflater.inflate(R.layout.fragment_comentarios_chofer, container, false);
         final Peticiones peticiones = new Peticiones();
         sharedPreferences= PreferenceManager.getDefaultSharedPreferences(getContext());
