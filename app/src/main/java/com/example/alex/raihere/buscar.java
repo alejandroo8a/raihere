@@ -46,7 +46,7 @@ public class buscar extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment asdasd
         View view =inflater.inflate(R.layout.fragment_buscar, container, false);
         txtFecha = (TextView) view.findViewById(R.id.txtfecha);
         btnbuscar=(FloatingActionButton)view.findViewById(R.id.fab);
