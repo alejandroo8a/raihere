@@ -609,7 +609,7 @@ public class Peticiones {
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
         final String fecha = format.format(date);
         StringRequest request = new StringRequest(Request.Method.POST,
-                URL,
+                URL,//aqui va
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
